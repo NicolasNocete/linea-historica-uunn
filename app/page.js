@@ -61,6 +61,7 @@ export default function Page() {
               textAlign="justify"
               mb={4}
               px={4}
+              wordBreak={"break-word"}
             >
               {hito.content}
             </Text>

@@ -27,7 +27,8 @@ export default function RootLayout({ children }) {
         <Provider>
           <Container
             pt={4}
-            maxW="container.lg"
+            maxW="100vw"
+            width="container.xl"
             maxH="90vh"
             p={2}
             display={"flex"}
