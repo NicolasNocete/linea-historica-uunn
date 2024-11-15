@@ -25,7 +25,14 @@ export default function RootLayout({ children }) {
     <html suppressHydrationWarning>
       <body>
         <Provider>
-          <Container maxW="container.xl" pt={4}>
+          <Container
+            pt={4}
+            maxW="container.lg"
+            maxH="90vh"
+            p={2}
+            display={"flex"}
+            justifyContent={"center"}
+          >
             {children}
           </Container>
         </Provider>

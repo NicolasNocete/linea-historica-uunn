@@ -18,55 +18,52 @@ import { LuCalendar } from "react-icons/lu";
 import { hitos } from "@/data/hitos";
 
 export default function Page() {
-  console.log(hitos);
   return (
-    <Container maxW="container.xl" minW="650px" p={2}>
-      <Box
-        border="2px solid"
-        borderColor="gray.200"
-        borderRadius="md"
-        p={4}
-        display="flex"
-        justifyContent="center"
-        maxW={800}
-        flexDirection="column"
-        alignItems="center"
+    <Box
+      border="2px solid"
+      borderColor="gray.200"
+      borderRadius="md"
+      p={4}
+      display="flex"
+      justifyContent="center"
+      flexDirection="column"
+      alignItems="center"
+    >
+      <Image src="/logo.jpeg" alt="logo" width="90vw" maxW="500px" />
+      <StepsRoot
+        orientation="vertical"
+        height="80vh"
+        defaultValue={1}
+        count={hitos.length}
       >
-        <Image src="/logo.jpeg" alt="logo" width={800} />
-        <StepsRoot
-          orientation="vertical"
-          height="80vh"
-          defaultValue={1}
-          count={hitos.length}
-        >
-          <StepsList>
-            {hitos.map((hito) => (
-              <StepsItem key={hito.id} index={hito.id} icon={<LuCalendar />} />
-            ))}
-          </StepsList>
+        <StepsList>
           {hitos.map((hito) => (
-            <StepsContent key={hito.id} index={hito.id}>
-              <Text
-                fontSize="small"
-                fontWeight="bold"
-                color="gray.500"
-                textAlign="right"
-              >
-                {hito.date}
-              </Text>
-              <Text
-                fontSize="2xl"
-                fontWeight="bold"
-                color="blue.500"
-                textAlign="center"
-              >
-                {hito.title}
-              </Text>
-              <Text>{hito.content}</Text>
-            </StepsContent>
+            <StepsItem key={hito.id} index={hito.id} icon={<LuCalendar />} />
           ))}
-        </StepsRoot>
-      </Box>
-    </Container>
+        </StepsList>
+        {hitos.map((hito) => (
+          <StepsContent key={hito.id} index={hito.id}>
+            <Text
+              fontSize="small"
+              fontWeight="bold"
+              color="gray.500"
+              textAlign="right"
+            >
+              {hito.date}
+            </Text>
+            <Text
+              fontSize="2xl"
+              fontWeight="bold"
+              color="blue.500"
+              textAlign="center"
+              mb={4}
+            >
+              {hito.title}
+            </Text>
+            <Text>{hito.content}</Text>
+          </StepsContent>
+        ))}
+      </StepsRoot>
+    </Box>
   );
 }
