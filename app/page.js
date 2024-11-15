@@ -32,7 +32,7 @@ export default function Page() {
       <Image src="/logo.jpeg" alt="logo" width="90vw" maxW="500px" />
       <StepsRoot
         orientation="vertical"
-        height="80vh"
+        height="95vh"
         defaultValue={1}
         count={hitos.length}
       >

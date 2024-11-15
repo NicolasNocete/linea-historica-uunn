@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
             pt={4}
             maxW="100vw"
             width="container.xl"
-            maxH="90vh"
+            maxH="100vh"
             p={2}
             display={"flex"}
             justifyContent={"center"}
