@@ -43,16 +43,11 @@ export default function Page() {
         </StepsList>
         {hitos.map((hito) => (
           <StepsContent key={hito.id} index={hito.id}>
-            <Text
-              fontSize="small"
-              fontWeight="bold"
-              color="gray.500"
-              textAlign="right"
-            >
+            <Text fontWeight="bold" color="gray.500" textAlign="right">
               {hito.date}
             </Text>
             <Text
-              fontSize="2xl"
+              fontSize="3xl"
               fontWeight="bold"
               color="blue.500"
               textAlign="center"
@@ -60,7 +55,15 @@ export default function Page() {
             >
               {hito.title}
             </Text>
-            <Text>{hito.content}</Text>
+            <Text
+              fontSize="lg"
+              color="gray.600"
+              textAlign="justify"
+              mb={4}
+              px={4}
+            >
+              {hito.content}
+            </Text>
           </StepsContent>
         ))}
       </StepsRoot>
