@@ -27,9 +27,8 @@ export default function RootLayout({ children }) {
         <Provider>
           <Container
             pt={4}
-            maxW="100vw"
-            width="container.xl"
-            maxH="100vh"
+            width="100vw"
+            height="100vh"
             p={2}
             display={"flex"}
             justifyContent={"center"}

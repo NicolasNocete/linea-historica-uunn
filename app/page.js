@@ -28,11 +28,12 @@ export default function Page() {
       justifyContent="center"
       flexDirection="column"
       alignItems="center"
+      height="100%"
     >
       <Image src="/logo.jpeg" alt="logo" width="90vw" maxW="500px" />
       <StepsRoot
         orientation="vertical"
-        height="95vh"
+        height="100%"
         defaultValue={1}
         count={hitos.length}
       >
@@ -65,6 +66,36 @@ export default function Page() {
             >
               {hito.content}
             </Text>
+
+            {hito.link && (
+              <Box
+                display="flex"
+                justifyContent="center"
+                alignItems="center"
+                mb={4}
+                height={[
+                  "auto",
+                  "auto",
+                  "auto",
+                  "auto",
+                  "auto",
+                  "auto",
+                  "auto",
+                ]}
+                w={["auto", "auto", "auto", "auto", "auto", "auto", "auto"]}
+              >
+                <iframe
+                  width="771"
+                  height="514"
+                  src={hito.link}
+                  title="Anexo"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  allowfullscreen
+                ></iframe>
+              </Box>
+            )}
           </StepsContent>
         ))}
       </StepsRoot>

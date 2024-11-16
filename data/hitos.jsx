@@ -5,6 +5,7 @@ export const hitos = [
     title: "1949 - Establecimiento de la Educación Universitaria Gratuita",
     content:
       "En 1949, el gobierno argentino estableció la educación universitaria gratuita, permitiendo un mayor acceso a la educación superior para todos los ciudadanos.",
+    link: "https://www.youtube.com/embed/X1p3oQRXEcI",
   },
   {
     id: 1,
@@ -12,6 +13,7 @@ export const hitos = [
     title: "Años 1950 - Expansión de Universidades",
     content:
       "Durante los años 1950, se establecieron varias nuevas universidades en toda Argentina, ampliando el acceso a la educación superior.",
+    link: "https://www.youtube.com/embed/ffV2HwO5LHg",
   },
   {
     id: 2,
