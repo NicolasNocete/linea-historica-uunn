@@ -69,16 +69,19 @@ export default function Page() {
               >
                 {hito.title}
               </Text>
-              <Text
-                fontSize={{ base: "md", md: "lg" }}
-                color="gray.600"
-                textAlign="justify"
-                mb={4}
-                px={4}
-                wordBreak={"break-word"}
-              >
-                {hito.content}
-              </Text>
+              {hito.content.map((content, index) => (
+                <Text
+                  fontSize={{ base: "md", md: "lg" }}
+                  color="gray.600"
+                  textAlign="justify"
+                  mb={4}
+                  px={4}
+                  wordBreak={"break-word"}
+                  key={index}
+                >
+                  {content}
+                </Text>
+              ))}
 
               {hito.link && hito.type === "video" && (
                 <Flex
@@ -95,6 +98,7 @@ modestbranding=1: Minimiza el branding de YouTube.
 rel=0: No muestra videos relacionados al final.
 showinfo=0: Oculta la información del video. */}
                   <iframe
+                    id="video"
                     width="100%"
                     height="100%"
                     src={`${hito.link}?controls=1&disablekb=1&modestbranding=1&rel=0&showinfo=0`}
