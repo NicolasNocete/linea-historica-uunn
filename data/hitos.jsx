@@ -8,7 +8,7 @@ export const hitos = [
       `Durante los años 30 y 40 distintas agrupaciones estudiantiles, docentes, culturales y políticas cuestionaron el carácter arancelado y elitista del ingreso a las instituciones públicas y militaron activamente para democratizar el acceso a la educación superior.`,
     ],
 
-    link: "https://difusion.pci.unc.edu.ar/unc/2018/reforma-universitaria/images/generales_reformistas_04_b.jpg",
+    link: "https://www.unc.edu.ar/sites/default/files/reforma_0.jpg",
     type: "image",
   },
   {
@@ -29,7 +29,8 @@ export const hitos = [
     date: "1950",
     title: "La Libertadora y los gobiernos civiles débiles (1955 -1966)",
     content: [
-      `En este período se restringieron muchos de los postulados de la reforma universitaria y se impusieron los exámenes de ingreso. El cobro de aranceles y la eliminación del acceso irrestricto redujeron las posibilidades de acceso a los estudios superiores. En esta etapa de la historia argentina se expulsaron a los docentes que estaban vinculados al Peronismo y se reprimieron estudiantes. La “Noche de los bastones largos” representa un hito fundamental de la lucha estudiantil en 1966. Se movilizaron contra el Decreto 16912 que buscaba poner fin a más de 40 años de autonomía universitaria, cogobierno estudiantil y libertad de cátedra. `,
+      `En este período se restringieron muchos de los postulados de la reforma universitaria y se impusieron los exámenes de ingreso. El cobro de aranceles y la eliminación del acceso irrestricto redujeron las posibilidades de acceso a los estudios superiores. En esta etapa de la historia argentina se expulsaron a los docentes que estaban vinculados al Peronismo y se reprimieron estudiantes. `,
+      `La “Noche de los bastones largos” representa un hito fundamental de la lucha estudiantil en 1966. Se movilizaron contra el Decreto 16912 que buscaba poner fin a más de 40 años de autonomía universitaria, cogobierno estudiantil y libertad de cátedra. `,
     ],
     link: "https://scontent.fcor2-2.fna.fbcdn.net/v/t1.6435-9/38137337_1759951557386539_6335999857446092800_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeEBuhY8cC80KZ1Wr9KwkOfnaSlCf8ix9UtpKUJ_yLH1S7rUqfz8OcbhT2M8OF_wTQI&_nc_ohc=VYHo15oq4TUQ7kNvgHOgz-W&_nc_zt=23&_nc_ht=scontent.fcor2-2.fna&_nc_gid=Ajbg6PFHLneaFfccx-C6Vbb&oh=00_AYCokaskbLKSb0_kAK6tvXutkhSmJF5LFJuYpOncpymvPA&oe=6766E785",
     type: "image",
