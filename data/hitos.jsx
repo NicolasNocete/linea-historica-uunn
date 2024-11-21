@@ -84,7 +84,7 @@ export const hitos = [
   {
     id: 7,
     date: "2003-2015",
-    title: "Nueva era",
+    title: "Actualidad",
     content: [
       `Luego de la brutal crisis del 2001 y la salida anticipada de Fernando de la Rúa asume Nestro Kirchner como presidente de la nación. La política de educación superior en su mandato y los dos de Cristina Fernandez se ve caracterizada por un aumento sustancial en el presupuesto destinado a las universidades y becas. Otro aspecto relevante fue la creación de 16 casas de estudio superior. En ningún otro período de tan pocos años el sistema universitario logró dicho nivel de expansión, y en ningún otro país de la región la matrícula universitaria en universidades de gestión estatal resultó ser tan importante.`,
       `La creación de estas nuevas universidades modificó el mapa del sistema universitario argentino, pero principalmente generó la posibilidad de que nuevos sujetos se incorporen a un espacio de formación superior: primera generación de estudiantes universitarios, mayores de treinta años, y madres y padres son algunos de los grupos sociales que se han visto beneficiados por esta política pública de educación superior.`,
@@ -95,7 +95,7 @@ export const hitos = [
   {
     id: 8,
     date: "2003-2015",
-    title: "Nueva era",
+    title: "Actualidad",
     content: [
       `La Universidad Nacional de Rafaela nace en diciembre de 2014 y rápidamente se convierte en una propuesta innovadora e interesante para estudiantes de la zona y de todo el país. En el 2016 comienzan las tres primeras carreras: Licenciatura en Diseño Industrial, Medios Audiovisuales y Digitales y Relaciones del Trabajo. En el año 2017 se presenta el Masterplan del Campus Universitario, comienzan a desarrollarse fuertemente los proyectos de extensión universitaria, programas de becas propias, acciones de internacionalización y primeras diplomaturas. Año a año la universidad continuó creciendo, incorporando propuestas y aumentando notablemente la matrícula. Así llegamos a la actualidad, con una amplia oferta de tecnicaturas, licenciaturas, ingenierías y maestrías, con más de 3600 estudiantes transitando las aulas presenciales y virtuales.`,
     ],
