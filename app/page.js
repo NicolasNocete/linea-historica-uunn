@@ -1,6 +1,6 @@
 "use client";
 
-import { Box, Image, Text, Container } from "@chakra-ui/react";
+import { Box, Image, Text, Container, Flex } from "@chakra-ui/react";
 import { Button } from "@/components/ui/button";
 import {
   StepsCompletedContent,
@@ -24,13 +24,15 @@ export default function Page() {
       borderColor="gray.200"
       borderRadius="md"
       p={4}
-      display="flex"
-      justifyContent="center"
-      flexDirection="column"
-      alignItems="center"
       height="100%"
+      width={"calc(100vw - 1rem)"}
+      overflow={"hidden"}
     >
+
+      <Flex height={"100%"} flexDirection={"column"} justifyContent={"center"} alignItems={"center"}>
+        <Box my={{ base: 2, md: 0 }}>
       <Image src="/logo.jpeg" alt="logo" width="90vw" maxW="500px" />
+        </Box>
       <StepsRoot
         orientation="vertical"
         height="100%"
@@ -43,12 +45,12 @@ export default function Page() {
           ))}
         </StepsList>
         {hitos.map((hito) => (
-          <StepsContent key={hito.id} index={hito.id}>
+          <StepsContent key={hito.id} index={hito.id} width="100%" display="flex" flexDirection="column" height="100%">
             <Text fontWeight="bold" color="gray.500" textAlign="right">
               {hito.date}
             </Text>
             <Text
-              fontSize="3xl"
+              fontSize={{ base: "xl", md: "3xl" }}
               fontWeight="bold"
               color="blue.500"
               textAlign="center"
@@ -57,7 +59,7 @@ export default function Page() {
               {hito.title}
             </Text>
             <Text
-              fontSize="lg"
+              fontSize={{ base: "md", md: "lg" }}
               color="gray.600"
               textAlign="justify"
               mb={4}
@@ -68,37 +70,37 @@ export default function Page() {
             </Text>
 
             {hito.link && (
-              <Box
-                display="flex"
+              <Flex
+                flex={1}
                 justifyContent="center"
                 alignItems="center"
                 mb={4}
-                height={[
-                  "auto",
-                  "auto",
-                  "auto",
-                  "auto",
-                  "auto",
-                  "auto",
-                  "auto",
-                ]}
-                w={["auto", "auto", "auto", "auto", "auto", "auto", "auto"]}
+
+                bg={"red.400"}
               >
+                {/* 
+controls=0: Oculta los controles del reproductor.
+disablekb=1: Deshabilita los controles del teclado.
+modestbranding=1: Minimiza el branding de YouTube.
+rel=0: No muestra videos relacionados al final.
+showinfo=0: Oculta la información del video. */}
                 <iframe
-                  width="771"
-                  height="514"
-                  src={hito.link}
+                  width="100%"
+                  height="100%"
+                  src={`${hito.link}?controls=1&disablekb=1&modestbranding=1&rel=0&showinfo=0`}
                   title="Anexo"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   referrerpolicy="strict-origin-when-cross-origin"
                   allowfullscreen
                 ></iframe>
-              </Box>
+              </Flex>
             )}
           </StepsContent>
         ))}
       </StepsRoot>
+      </Flex>
+
     </Box>
   );
 }

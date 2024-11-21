@@ -26,12 +26,10 @@ export default function RootLayout({ children }) {
       <body>
         <Provider>
           <Container
-            pt={4}
             width="100vw"
             height="100vh"
             p={2}
-            display={"flex"}
-            justifyContent={"center"}
+            bgColor={"black"}
           >
             {children}
           </Container>
