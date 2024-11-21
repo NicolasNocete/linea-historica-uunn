@@ -60,8 +60,6 @@ export default function Page() {
               <Box
                 display="flex"
                 flexDirection="column"
-                justifyContent="center"
-                alignItems="center"
                 flex={1}
                 p={4}
                 //agregar scroll

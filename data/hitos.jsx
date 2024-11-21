@@ -26,8 +26,8 @@ export const hitos = [
   },
   {
     id: 2,
-    date: "1950",
-    title: "La Libertadora y los gobiernos civiles débiles (1955 -1966)",
+    date: "1955 -1966",
+    title: "La Libertadora y los gobiernos civiles débiles",
     content: [
       `En este período se restringieron muchos de los postulados de la reforma universitaria y se impusieron los exámenes de ingreso. El cobro de aranceles y la eliminación del acceso irrestricto redujeron las posibilidades de acceso a los estudios superiores. En esta etapa de la historia argentina se expulsaron a los docentes que estaban vinculados al Peronismo y se reprimieron estudiantes. `,
       `La “Noche de los bastones largos” representa un hito fundamental de la lucha estudiantil en 1966. Se movilizaron contra el Decreto 16912 que buscaba poner fin a más de 40 años de autonomía universitaria, cogobierno estudiantil y libertad de cátedra. `,
@@ -72,7 +72,7 @@ export const hitos = [
   {
     id: 6,
     date: "1990",
-    title: "Los 90 - Avances del neoliberalismo",
+    title: "Avances del neoliberalismo",
     content: [
       `Durante el período de los gobiernos de la convertibilidad son visibles las decisiones y las políticas implementadas que se corresponden con el modelo de país planteado por el menemismo, basado en propuestas que tienen su fundamento en ideas neoliberales.`,
       `Es así que el sistema universitario se vio afectado por una serie de medidas y de determinaciones que, en varios aspectos, implicaron la re-discusión y el cuestionamiento de ciertos principios reformistas.`,
