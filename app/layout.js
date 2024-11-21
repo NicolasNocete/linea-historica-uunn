@@ -25,12 +25,7 @@ export default function RootLayout({ children }) {
     <html suppressHydrationWarning>
       <body>
         <Provider>
-          <Container
-            width="100vw"
-            height="100vh"
-            p={2}
-            bgColor={"black"}
-          >
+          <Container width="100vw" height="100vh" p={2}>
             {children}
           </Container>
         </Provider>
